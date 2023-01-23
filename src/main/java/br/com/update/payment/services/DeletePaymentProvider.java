@@ -15,8 +15,6 @@ public class DeletePaymentProvider {
 
     private String URL;
 
-    private ObjectMapper mapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
-
     public DeletePaymentProvider(String idCliente, String idPaymentProvider){
         this.URL = String.format("https://api.nuvemshop.com.br/v1/%s/payment_providers/%s", idCliente, idPaymentProvider);
     }
